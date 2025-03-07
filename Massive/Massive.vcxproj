@@ -19,12 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>17.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d6cd2a4d-a6d8-4538-a565-f1dd85dfecf6}</ProjectGuid>
-    <RootNamespace>Ccode</RootNamespace>
+    <ProjectGuid>{fdb0432a-b3b6-4de8-872e-a2bd6d878cef}</ProjectGuid>
+    <RootNamespace>Massive</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>01_C++introduce</ProjectName>
+    <ProjectName>07_RandomMatrix</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,8 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="01pw.cpp" />
-    <ClCompile Include="01hw.cpp" />
+    <ClCompile Include="07pw.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
