@@ -25,7 +25,7 @@ int main()
         cout << endl;
     }
         cout << endl;
-   
+
     cout << "Amount of nums, which != 0: " << counter;*/
 
     //2
@@ -120,7 +120,7 @@ int main()
     }
     cout << endl;
     cout << "Product of nums, which > 0: " << prod;*/
-    
+
     //6
     /*int prod = 1;
     const int row = 4;
@@ -141,7 +141,7 @@ int main()
     }
     cout << endl;
     cout << "Product of nums, which < 0: " << prod;*/
-    
+
     //7
     /*int counter = 0;
     const int row = 4;
@@ -162,7 +162,7 @@ int main()
     }
     cout << endl;
     cout << "Amount of nums, which % 6 == 1: " << counter;*/
-    
+
     //8
     /*int  min;
     const int row = 5;
@@ -176,7 +176,7 @@ int main()
             cout << setw(3) << array[i][j] << " ";
         }
         cout << endl;
-    } 
+    }
      min = array[0][0];
      for (int i = 0; i < row; i++)
         {
@@ -191,34 +191,34 @@ int main()
         cout << endl;
         cout << "Min num: " << min;*/
 
-    /*int  max;
-    const int row = 5;
-    const int col = 6;
-    int array[row][col] = {};
-    for (int i = 0; i < row; i++)
-    {
-        for (int j = 0; j < col; j++)
+        /*int  max;
+        const int row = 5;
+        const int col = 6;
+        int array[row][col] = {};
+        for (int i = 0; i < row; i++)
         {
-            array[i][j] = rand() % 20;
-            cout << setw(3) << array[i][j] << " ";
-        }
-        cout << endl;
-    }
-    max = array[0][0];
-    for (int i = 0; i < row; i++)
-    {
-        for (int j = 0; j < col; j++)
-        {
-            if (max < array[i][j])
+            for (int j = 0; j < col; j++)
             {
-                max = array[i][j];
+                array[i][j] = rand() % 20;
+                cout << setw(3) << array[i][j] << " ";
+            }
+            cout << endl;
+        }
+        max = array[0][0];
+        for (int i = 0; i < row; i++)
+        {
+            for (int j = 0; j < col; j++)
+            {
+                if (max < array[i][j])
+                {
+                    max = array[i][j];
+                }
             }
         }
-    }
-    cout << endl;
-    cout << "Max num: " << max;*/
+        cout << endl;
+        cout << "Max num: " << max;*/
 
-    //10
+        //10
     float sum = 0;
     const int row = 4;
     const int col = 5;
