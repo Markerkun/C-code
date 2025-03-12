@@ -68,7 +68,8 @@ char T_F(int a)
     return (a > 0) ? 'T' : 'F';
 }
 
-void InitArray(int arr[], int size)
+//1
+void InitArray(int arr[], const int size)
 {
     srand(time(NULL));
     for (int i = 0; i < size; i++)
@@ -76,7 +77,7 @@ void InitArray(int arr[], int size)
         arr[i] = rand() % 70 - 20;
     }
 }
-void ShowArray(int arr[], int size)
+void ShowArray(int arr[], const int size)
 {
     for (int i = 0; i < size; i++)
     {
@@ -84,7 +85,7 @@ void ShowArray(int arr[], int size)
     }
     cout << endl;
 }
-void MinMax(int arr[], int size)
+void MinMax(int arr[], const int size)
 {
     int max = arr[0];
     int min = arr[0];
@@ -100,6 +101,73 @@ void MinMax(int arr[], int size)
         }
     }
     cout << "Min: " << min << ", Max: " << max << endl;
+}
+
+//2
+void reverse(int arr[], const int size)
+{
+    /*const int size2 = 10;
+    int arr2[size2] ;
+    for (int i = size2; i >= 0; i--)
+    {
+        arr[i] = arr2[size2 - i];
+    }
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr2[i] << " ";
+    }
+    cout << endl;*/
+}
+
+
+//3
+void simple(int arr[], int size)
+{
+    int counter = 0;
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] > 0)
+        {
+            
+            for (int j = arr[i]-1; j >= 1; j--)
+            {
+                if (j == 0)
+                {
+                    NULL;
+                }
+                else if (arr[i] % j == 0)
+                {
+                    counter++;
+                }
+            }
+        }
+        else
+        {
+            
+            for (int j = arr[i]+1; j <= -1; j++)
+            {
+                if (j == 0)
+                {
+                    NULL;
+                }
+                else if (arr[i] % j == 0)
+                {
+                    counter++;
+                }
+            }
+        }
+        
+        if (counter > 1)
+        {
+            cout << "Number " << arr[i] << " isn't simple" << endl;
+        }
+        else
+        {
+            cout << "Number "<< arr[i] << " is simple" << endl;
+        }
+        counter = 0;
+    }
+    cout << endl;
 }
 
 int main()
@@ -128,4 +196,10 @@ int main()
     InitArray(arr, size);
     ShowArray(arr, size);
     MinMax(arr, size);
+
+    //2
+    /*reverse(arr, size);*/
+    
+    //3
+    simple(arr, size);
 }
