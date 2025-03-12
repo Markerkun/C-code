@@ -123,6 +123,10 @@ void main()
 		arri[i] = rand() % 40 - 20;
 		arrf[i] = rand() % 40 - 19.3;
 		arrc[i] = (char)(rand() % 60 + 65);
+		for (int j = 0; j < size; j++)
+		{
+			matrix[i][j] = rand() % 40 - 20;
+		}
 	}
 
 	ShowArray(arri, size);
@@ -135,7 +139,7 @@ void main()
 
 	//3
 
-	cout << "Max in arr: " <<  Max_arr(arri, size) << endl;
+	cout << "Max in arr: " << Max_arr(arri, size) << endl;
 	cout << "Max in arr: " << Max_arr(matrix, size) << endl;
 
 
