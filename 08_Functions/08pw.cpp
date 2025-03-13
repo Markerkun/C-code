@@ -106,17 +106,12 @@ void MinMax(int arr[], const int size)
 //2
 void reverse(int arr[], const int size)
 {
-    /*const int size2 = 10;
-    int arr2[size2] ;
-    for (int i = size2; i >= 0; i--)
+    
+    for (int i = 1; i <= size; i++)
     {
-        arr[i] = arr2[size2 - i];
+        cout << arr[size-i] << " ";
     }
-    for (int i = 0; i < size; i++)
-    {
-        cout << arr2[i] << " ";
-    }
-    cout << endl;*/
+    cout << endl;
 }
 
 
@@ -198,7 +193,7 @@ int main()
     MinMax(arr, size);
 
     //2
-    /*reverse(arr, size);*/
+    reverse(arr, size);
     
     //3
     simple(arr, size);
