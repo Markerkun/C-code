@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="09_OverloadFunctionTemplate.cpp">
+    <ClCompile Include="09pw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="09hw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
