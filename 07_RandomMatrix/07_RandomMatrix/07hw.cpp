@@ -61,11 +61,15 @@ int main()
 							max = matrix[i][j];
 						}
 					}
-					
+					else
+					{
+						cout << setw(3);
+					}
 
 				}
 				cout << endl;
 			}
+			cout << "Max = " << max << endl;
 			break;
 		case 2:
 			for (int i = 0; i < size; i++)
@@ -83,12 +87,13 @@ int main()
 					}
 					else
 					{
-						cout << setw(3) << matrix[i][j];
+						cout << setw(3);
 					}
 
 				}
 				cout << endl;
 			}
+			cout << "Max = " << max << endl;
 			break;
 		case 3:
 			for (int i = 0; i < size; i++)
@@ -106,11 +111,12 @@ int main()
 					}
 					else
 					{
-						cout << setw(3) << matrix[i][j];
+						cout << setw(3);
 					}
 				}
 				cout << endl;
 			}
+			cout << "Max = " << max << endl;
 			break;
 		case 4:
 			for (int i = 0; i < size; i++)
@@ -128,11 +134,12 @@ int main()
 					}
 					else
 					{
-						cout << setw(3) << matrix[i][j];
+						cout << setw(3);
 					}
 				}
 				cout << endl;
 			}
+			cout << "Max = " << max << endl;
 			break;
 		case 5:
 			for (int i = 0; i < size; i++)
@@ -158,11 +165,12 @@ int main()
 					}
 					else
 					{
-						cout << setw(3) << matrix[i][j];
+						cout << setw(3);
 					}
 				}
 				cout << endl;
 			}
+			cout << "Max = " << max << endl;
 			break;
 		case 6:
 			for (int i = 0; i < size; i++)
@@ -188,11 +196,12 @@ int main()
 					}
 					else
 					{
-						cout << setw(3) << matrix[i][j];
+						cout << setw(3);
 					}
 				}
 				cout << endl;
 			}
+			cout << "Max = " << max << endl;
 			break;
 		case 7:
 			for (int i = 0; i < size; i++)
@@ -210,11 +219,12 @@ int main()
 					}
 					else
 					{
-						cout << setw(3) << matrix[i][j];
+						cout << setw(3);
 					}
 				}
 				cout << endl;
 			}
+			cout << "Max = " << max << endl;
 			break;
 		case 8:
 			for (int i = 0; i < size; i++)
@@ -232,11 +242,12 @@ int main()
 					}
 					else
 					{
-						cout << setw(3) << matrix[i][j];
+						cout << setw(3);
 					}
 				}
 				cout << endl;
 			}
+			cout << "Max = " << max << endl;
 			break;
 		case 9:
 			for (int i = 0; i < size; i++)
@@ -254,12 +265,13 @@ int main()
 					}
 					else
 					{
-						cout << setw(3) << matrix[i][j];
+						cout << setw(3);
 					}
 
 				}
 				cout << endl;
 			}
+			cout << "Max = " << max << endl;
 			break;
 		case 10:
 			for (int i = 0; i < size; i++)
@@ -277,11 +289,12 @@ int main()
 					}
 					else
 					{
-						cout << setw(3) << matrix[i][j];
+						cout << setw(3);
 					}
 				}
 				cout << endl;
 			}
+			cout << "Max = " << max << endl;
 			break;
 		default:
 			break;
