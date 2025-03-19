@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_OverloadFunctionTemplate
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11_Pointers", "11_Pointers\11_Pointers.vcxproj", "{45A0EFC6-2F44-4B88-8847-31F02A0FB94C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12_PointersInFunction", "12_PointersInFunction\12_PointersInFunction.vcxproj", "{D29CB819-939A-4224-9AE7-5536023B86A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,18 @@ Global
 		{45A0EFC6-2F44-4B88-8847-31F02A0FB94C}.Release|x64.Build.0 = Release|x64
 		{45A0EFC6-2F44-4B88-8847-31F02A0FB94C}.Release|x86.ActiveCfg = Release|Win32
 		{45A0EFC6-2F44-4B88-8847-31F02A0FB94C}.Release|x86.Build.0 = Release|Win32
+		{D29CB819-939A-4224-9AE7-5536023B86A1}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{D29CB819-939A-4224-9AE7-5536023B86A1}.Debug|Any CPU.Build.0 = Debug|x64
+		{D29CB819-939A-4224-9AE7-5536023B86A1}.Debug|x64.ActiveCfg = Debug|x64
+		{D29CB819-939A-4224-9AE7-5536023B86A1}.Debug|x64.Build.0 = Debug|x64
+		{D29CB819-939A-4224-9AE7-5536023B86A1}.Debug|x86.ActiveCfg = Debug|Win32
+		{D29CB819-939A-4224-9AE7-5536023B86A1}.Debug|x86.Build.0 = Debug|Win32
+		{D29CB819-939A-4224-9AE7-5536023B86A1}.Release|Any CPU.ActiveCfg = Release|x64
+		{D29CB819-939A-4224-9AE7-5536023B86A1}.Release|Any CPU.Build.0 = Release|x64
+		{D29CB819-939A-4224-9AE7-5536023B86A1}.Release|x64.ActiveCfg = Release|x64
+		{D29CB819-939A-4224-9AE7-5536023B86A1}.Release|x64.Build.0 = Release|x64
+		{D29CB819-939A-4224-9AE7-5536023B86A1}.Release|x86.ActiveCfg = Release|Win32
+		{D29CB819-939A-4224-9AE7-5536023B86A1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

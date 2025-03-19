@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-#include <iostream>
-
 int main()
 {
     //1
