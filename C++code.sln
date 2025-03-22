@@ -25,7 +25,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11_Pointers", "11_Pointers\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12_PointersInFunction", "12_PointersInFunction\12_PointersInFunction.vcxproj", "{D29CB819-939A-4224-9AE7-5536023B86A1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_LinearSearchSort", "10_LinearSearchSort\10_LinearSearchSort.vcxproj", "{5C730931-AF60-4400-AD5F-5F64177C2E67}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13_FormatFunctions", "13_FormatFunctions\13_FormatFunctions.vcxproj", "{A51F6BF1-E663-4401-B254-A12B7F09A835}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -169,18 +169,6 @@ Global
 		{D29CB819-939A-4224-9AE7-5536023B86A1}.Release|x64.Build.0 = Release|x64
 		{D29CB819-939A-4224-9AE7-5536023B86A1}.Release|x86.ActiveCfg = Release|Win32
 		{D29CB819-939A-4224-9AE7-5536023B86A1}.Release|x86.Build.0 = Release|Win32
-		{5C730931-AF60-4400-AD5F-5F64177C2E67}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{5C730931-AF60-4400-AD5F-5F64177C2E67}.Debug|Any CPU.Build.0 = Debug|x64
-		{5C730931-AF60-4400-AD5F-5F64177C2E67}.Debug|x64.ActiveCfg = Debug|x64
-		{5C730931-AF60-4400-AD5F-5F64177C2E67}.Debug|x64.Build.0 = Debug|x64
-		{5C730931-AF60-4400-AD5F-5F64177C2E67}.Debug|x86.ActiveCfg = Debug|Win32
-		{5C730931-AF60-4400-AD5F-5F64177C2E67}.Debug|x86.Build.0 = Debug|Win32
-		{5C730931-AF60-4400-AD5F-5F64177C2E67}.Release|Any CPU.ActiveCfg = Release|x64
-		{5C730931-AF60-4400-AD5F-5F64177C2E67}.Release|Any CPU.Build.0 = Release|x64
-		{5C730931-AF60-4400-AD5F-5F64177C2E67}.Release|x64.ActiveCfg = Release|x64
-		{5C730931-AF60-4400-AD5F-5F64177C2E67}.Release|x64.Build.0 = Release|x64
-		{5C730931-AF60-4400-AD5F-5F64177C2E67}.Release|x86.ActiveCfg = Release|Win32
-		{5C730931-AF60-4400-AD5F-5F64177C2E67}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
