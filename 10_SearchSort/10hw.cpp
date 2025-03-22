@@ -5,7 +5,7 @@ using namespace std;
 
 int count1 = 0;
 template <typename T>
-T LinearSearch(T arr[], int T)
+T LinearSearch(T arr[], T value)
 {
 	for (int i = 0; i < SIZE; i++)
 	{
@@ -142,16 +142,16 @@ int main()
 	const int size = 10;
 	int arri[size] = {};
 	float arrf[size] = {};
-	for (int i = 0; i < size; i++) 
+	for (int i = 0; i < size; i++)
 	{
-		arri[i][j] = rand() % 100 - 50;
-		arrf[i][j] = rand() % 100 - 50;
+		arri[i] = rand() % 100 - 50;
+		arrf[i] = rand() % 100 - 50.3;
 	}
 	quickSort(arri, 0, size - 1);
+	quickSort(arrf, 0, size - 1);
 	cout << "Elem is on pos : " << binarySearch(arri, size, 354) << endl;
-	cout << "Elem is on pos : " << binarySearch(arrf, size, 354) << endl;
-	PrintArr(arr1, size);
-	PrintArr(arrf, size);
+	//cout << "Elem is on pos : " << binarySearch(arrf, size, 354.3) << endl;
+	//PrintArr(arr1, size);
 	////bubbleSort(arr1, size);
 	////insertionSort(arr1, size);
 	////cout << "Number of swaps : " << count1 << endl;
