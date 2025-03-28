@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_SearchSort", "10_SearchS
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "15_MultydimensionDynamicArray", "15_MultydimensionDynamicArray\15_MultydimensionDynamicArray.vcxproj", "{22441D17-5902-4325-88BE-14D5B046DF8E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "16_FunctionPointersAutoDecltype", "16_FunctionPointersAutoDecltype\16_FunctionPointersAutoDecltype.vcxproj", "{131D1F78-F4B6-411D-A6AC-E8CE9BE53BB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -209,6 +211,18 @@ Global
 		{22441D17-5902-4325-88BE-14D5B046DF8E}.Release|x64.Build.0 = Release|x64
 		{22441D17-5902-4325-88BE-14D5B046DF8E}.Release|x86.ActiveCfg = Release|Win32
 		{22441D17-5902-4325-88BE-14D5B046DF8E}.Release|x86.Build.0 = Release|Win32
+		{131D1F78-F4B6-411D-A6AC-E8CE9BE53BB2}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{131D1F78-F4B6-411D-A6AC-E8CE9BE53BB2}.Debug|Any CPU.Build.0 = Debug|x64
+		{131D1F78-F4B6-411D-A6AC-E8CE9BE53BB2}.Debug|x64.ActiveCfg = Debug|x64
+		{131D1F78-F4B6-411D-A6AC-E8CE9BE53BB2}.Debug|x64.Build.0 = Debug|x64
+		{131D1F78-F4B6-411D-A6AC-E8CE9BE53BB2}.Debug|x86.ActiveCfg = Debug|Win32
+		{131D1F78-F4B6-411D-A6AC-E8CE9BE53BB2}.Debug|x86.Build.0 = Debug|Win32
+		{131D1F78-F4B6-411D-A6AC-E8CE9BE53BB2}.Release|Any CPU.ActiveCfg = Release|x64
+		{131D1F78-F4B6-411D-A6AC-E8CE9BE53BB2}.Release|Any CPU.Build.0 = Release|x64
+		{131D1F78-F4B6-411D-A6AC-E8CE9BE53BB2}.Release|x64.ActiveCfg = Release|x64
+		{131D1F78-F4B6-411D-A6AC-E8CE9BE53BB2}.Release|x64.Build.0 = Release|x64
+		{131D1F78-F4B6-411D-A6AC-E8CE9BE53BB2}.Release|x86.ActiveCfg = Release|Win32
+		{131D1F78-F4B6-411D-A6AC-E8CE9BE53BB2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
