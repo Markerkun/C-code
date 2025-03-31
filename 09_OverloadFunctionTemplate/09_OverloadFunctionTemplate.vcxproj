@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>17.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{450429cc-0a55-40e9-b46e-d085d53e3cac}</ProjectGuid>
-    <RootNamespace>My06ArrayLists</RootNamespace>
+    <ProjectGuid>{1c9a556a-2894-4b1a-a84d-10c2f045ca70}</ProjectGuid>
+    <RootNamespace>My09OverloadFunctionTemplate</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,8 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="06pw.cpp" />
-    <ClCompile Include="06hw.cpp" />
+    <ClCompile Include="09hw.cpp" />
+    <ClCompile Include="09pw.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

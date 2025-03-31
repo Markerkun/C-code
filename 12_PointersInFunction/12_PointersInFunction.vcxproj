@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{450429cc-0a55-40e9-b46e-d085d53e3cac}</ProjectGuid>
-    <RootNamespace>My06ArrayLists</RootNamespace>
+    <ProjectGuid>{d29cb819-939a-4224-9ae7-5536023b86a1}</ProjectGuid>
+    <RootNamespace>My12PointersInFunction</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,8 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="06pw.cpp" />
-    <ClCompile Include="06hw.cpp" />
+    <ClCompile Include="12pw.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
