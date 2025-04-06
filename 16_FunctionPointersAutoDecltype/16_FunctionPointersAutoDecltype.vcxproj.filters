@@ -18,5 +18,8 @@
     <ClCompile Include="16pw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="16hw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
