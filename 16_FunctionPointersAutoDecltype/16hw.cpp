@@ -4,52 +4,66 @@
 using namespace std;
 
 //1
-float Sum(int a, int b)
+void square(int& num)
 {
-	return a + b;
+	num *= num;
 }
-float Sub(int a, int b)
+void doubleValue(int& num)
 {
-	return a - b;
+	num *= 2;
 }
-float Division(int a, int b)
+void negate(int& num)
 {
-	return a / b;
+	num *= -1;
 }
-float Multy(int a, int b)
+void processArray(int arr[], int size, int op, void (*NumberOperation[])(int&))
 {
-	return a * b;
+	for (int i = 0; i < size; i++)
+	{
+		NumberOperation[op](arr[i]);
+	}
 }
 
 void main()
 {
-	float (*FuncArr[4])(int, int) = { Sum, Sub, Multy, Division };
-	int x = 6, y = 2;
-	char c = '+';
-
-	while (c != 'S')
+	void (*NumberOperation[3])(int&) = { square,doubleValue,negate };
+	int arr[] = { 1, 2, 3, 4, 5 };
+	for (int i = 0; i < 5; i++)
 	{
-		cout << "Enter operation: ";
-		cin >> c;
-		cout << "Enter your numbers: " << "\n";
-		cin >> x >> y;
-		switch (c)
+		cout << arr[i] << " ";
+	}
+	cout << endl;
+	int op = 4;
+
+	while (op != 0)
+	{
+		cout << "Enter operation[1 - square, 2 - double value, 3 - negate, 0 - stop]: ";
+		cin >> op;
+		switch (op) 
 		{
-		case '+':
-			cout << "Sum of numbers (x + y) : " << FuncArr[0](x, y) << "\n";
+		case 1:
+			processArray(arr, 5, 0, NumberOperation);
 			break;
-		case '-':
-			cout << "Sub of numbers (x - y) : " << FuncArr[1](x, y) << "\n";
+		case 2:
+			processArray(arr, 5, 1, NumberOperation);
 			break;
-		case '*':
-			cout << "Multy of numbers (x * y) : " << FuncArr[2](x, y) << "\n";
+		case 3:
+			processArray(arr, 5, 2, NumberOperation);
 			break;
-		case '/':
-			cout << "Division of numbers (x / y) : " << FuncArr[3](x, y) << "\n";
+		case 0:
+			op = 0;
+			cout << "Stopping program." << endl;
 			break;
 		default:
-			c = 'S';
+			cout << "Invalid option. Try again!" << endl;
 			break;
 		}
+
+		for (int i = 0; i < 5; i++)
+		{
+			cout << arr[i] << " ";
+		}
+		cout << endl;
 	}
 }
+
