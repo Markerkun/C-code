@@ -26,6 +26,7 @@ class Rectanglus
 {
 	Size size;
 	Coord pos;
+	char symbol;
 public:
 	Rectanglus()
 	{
@@ -33,6 +34,7 @@ public:
 		size.width = 0;
 		pos.X = 0;
 		pos.Y = 0;
+		symbol = '=';
 	}
 	Rectanglus(int width, int height)
 	{
@@ -40,6 +42,15 @@ public:
 		size.width = width;
 		pos.X = 0;
 		pos.Y = 0;
+		symbol = '=';
+	}
+	Rectanglus(int u_size)
+	{
+		size.height = u_size;
+		size.width = u_size;
+		pos.X = 0;
+		pos.Y = 0;
+		symbol = '=';
 	}
 	void Show()
 	{
@@ -54,7 +65,7 @@ public:
 			}
 			for (int j = 0; j < size.width; j++)
 			{
-				cout << "= ";
+				cout << symbol << " ";
 			}
 			cout << '\n';
 		}
@@ -85,6 +96,11 @@ public:
 		
 	}
 
+	void ChangeSymbol(char symbol)
+	{
+		this->symbol = symbol;
+	}
+
 
 
 
@@ -99,6 +115,7 @@ int main()
 	r.Show();
 	r.Scale(10, 10);
 	r.Move(5, 5);
+	r.ChangeSymbol('*');
 	r.Show();
 
 }
