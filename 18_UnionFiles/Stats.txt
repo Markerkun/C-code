@@ -1,0 +1,5 @@
+Amount of symbols: 129
+Amount of rows: 1
+Amount of vowels: 7
+Amount of consonants: 7
+Amount of digits: 2
