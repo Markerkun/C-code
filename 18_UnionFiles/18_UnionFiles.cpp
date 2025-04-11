@@ -52,11 +52,8 @@ void main()
     file1 << "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \nVestibulum nec quam quis turpis semper pellentesque \nsit amet quis dui.";
     file1.close();
     ifstream fin("Long_text.txt");
-    char l[130];
-    while (!fin.eof())
-    {
-        fin >> l;
-    }
+    string l;
+    getline(fin, l);
     fin.close();
     for (int i = 0; i < sizeof(l) - 1; i++)
     {
