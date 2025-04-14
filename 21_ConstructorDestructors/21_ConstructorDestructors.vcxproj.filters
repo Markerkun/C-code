@@ -15,6 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="21hw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="21pw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
