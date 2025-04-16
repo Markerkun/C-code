@@ -90,6 +90,52 @@ void FindInFileB(const char& filename)
 
     fromf.close();
 }
+void DeleteFromFileB(const char& filename)
+{
+    ifstream fromf(&filename);
+
+    if (!fromf)
+    {
+        cout << "Error with opening file" << endl; return;
+    }
+    string name;
+    cout << "Enter the name: ";
+    cin >> name;
+    int i = 2;
+    string line;
+    bool found = false;
+    char sure = 'N';
+    getline(fromf, line);
+    cout << line;
+    book w;
+    while (fromf >> w.name >> w.author >> w.edition >> w.genre)
+    {
+        if (w.author == name) 
+        {
+            cout << "Book found";
+            w.Show();
+            found = true;
+			cin.ignore();
+            cout << "You sure want to delete this book?[Y/N]"; cin >> sure;
+            if (sure == 'N')
+            {
+                return;
+            }
+            else if (sure == 'Y')
+            {
+
+
+				cout << "Book deleted(False)"; 
+            }
+        }
+    }
+    if (!found) 
+    {
+        cout << "There is no \"" << name << "\"." << endl;
+    }
+
+    fromf.close();
+}
 
 
 
@@ -107,7 +153,7 @@ void main()
         cout << "0. Exit\n";
         cout << "Your choice: ";
         cin >> choice;
-        cin.ignore(); // очищення буфера
+        cin.ignore();
 
         switch (choice) {
         case 1:
