@@ -53,6 +53,17 @@ public:
 		}
 	}
 
+	void operator ()(int count)
+	{
+		if (count == max_amount_sitters)
+		{
+			cout << "That's more than max passangers" << endl;
+		}
+		else
+		{
+			amount_sitters = count;
+		}
+	}
 	friend bool operator ==(const plane& left, const plane& right);
 	friend bool operator > (const plane& left, const plane& right);
 };
@@ -66,6 +77,8 @@ bool operator >(const plane& left, const plane& right)
 {
 	return (left.max_amount_sitters > right.max_amount_sitters);
 }
+
+
 
 
 
