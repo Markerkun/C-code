@@ -18,5 +18,8 @@
     <ClCompile Include="23_InlineMethodDelegationStaticMeth.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="23hw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

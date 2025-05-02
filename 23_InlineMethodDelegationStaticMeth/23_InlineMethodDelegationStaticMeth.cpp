@@ -160,6 +160,17 @@ public:
 			cout << endl;
 		}
 	}
+	void SearchByName(const string& name) {
+		bool found = false;
+		for (int i = 0; i < Count; ++i) {
+			if (abonents[i].GetName() == name) {
+				abonents[i].Show();
+				found = true;
+			}
+		}
+		if (!found)
+			cout << "No such abonent." << endl;
+	}
 	void Delete()
 	{
 		if (abonents != nullptr)
