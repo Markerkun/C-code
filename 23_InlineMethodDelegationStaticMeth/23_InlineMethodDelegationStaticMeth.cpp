@@ -133,6 +133,11 @@ class PhoneBook
 	int AbonentsAmount;
 	
 public:
+	PhoneBook()
+	{
+		abonents = nullptr;
+		AbonentsAmount = 0;
+	}
 	void AddAbonent(Abonent& ab)
 	{
 		AbonentsAmount++;
@@ -144,12 +149,6 @@ public:
 		temp[AbonentsAmount - 1] = ab;
 		Delete();
 		abonents = temp;
-	}
-	void SetAbonent(Abonent ab[])
-	{
-		Delete();
-		AbonentsAmount = sizeof(ab);
-		abonents = ab;
 	}
 	void Show()
 	{
@@ -186,28 +185,36 @@ public:
 
 int main()
 {
-												Abonent a1;
-												a1.Show();
-											Abonent a2("Ivan");
-												a2.Show();
-										Abonent a3("Ivan", "Ivanov");
-												a3.Show();
-								Abonent a4("Ivan", "Ivanov", "Ivanovich");
-												a4.Show();
-						Abonent a5("Ivan", "Ivanov", "Ivanovich", "Don't distarb");
-												a5.Show();
-				Abonent a6("Ivan", "Ivanov", "Ivanovich", "Don't distarb", "123-456-7890");
-												a6.Show();
-		Abonent a7("Ivan", "Ivanov", "Ivanovich", "Don't distarb", "123-456-7890", "098-765-4321");
-												a7.Show();
-	Abonent a8("Ivan", "Ivanov", "Ivanovich", "Don't distarb", "123-456-7890", "098-765-4321", "555-555-5555");
-												a8.Show();
+	Abonent a1;
+	a1.Show();
+	Abonent a2("Ivan1");
+	a2.Show();
+	Abonent a3("Ivan2", "Ivanov");
+	a3.Show();
+	Abonent a4("Ivan3", "Ivanov", "Ivanovich");
+	a4.Show();
+	Abonent a5("Ivan4", "Ivanov", "Ivanovich", "Don't distarb");
+	a5.Show();
+	Abonent a6("Ivan5", "Ivanov", "Ivanovich", "Don't distarb", "123-456-7890");
+	a6.Show();
+	Abonent a7("Ivan6", "Ivanov", "Ivanovich", "Don't distarb", "123-456-7890", "098-765-4321");
+	a7.Show();
+	Abonent a8("Ivan7", "Ivanov", "Ivanovich", "Don't distarb", "123-456-7890", "098-765-4321", "555-555-5555");
+	a8.Show();
 
 
+	
 
-	Abonent abonents[] = {a1, a2, a3, a4, a5, a6, a7, a8};
 	PhoneBook p1;
-	p1.AddAbonent(*abonents);
+	p1.AddAbonent(a1);
+	p1.AddAbonent(a2);
+	p1.AddAbonent(a3);
+	p1.AddAbonent(a4);
+	p1.AddAbonent(a5);
+	p1.AddAbonent(a6);
+	p1.AddAbonent(a7);
+	p1.AddAbonent(a8);
 	p1.Show();
+
 
 }
