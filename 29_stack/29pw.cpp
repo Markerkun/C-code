@@ -19,7 +19,7 @@
 //		if (topindex == full)
 //		{
 //			cout << "Stack is full!" << endl;
-//			return;
+//			return '\0';
 //		}
 //		arr[++topindex] = c;
 //	}

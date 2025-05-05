@@ -75,7 +75,7 @@ public:
 		{
 			size *= 2;
 			char* temp = new char[size];
-			for (int i = 0; i < topindex; i++)
+			for (int i = 0; i < topindex+1; i++)
 			{
 				temp[i] = arr[i];
 			}
@@ -95,10 +95,10 @@ public:
 int main()
 {
 	Stack st(2);
-	st.push(11);
-	st.push(21);
+	st.push('1');
+	st.push('2');
 	st.print();
-	st.push(5);
+	st.push('5');
 	st.print();
 	
 
