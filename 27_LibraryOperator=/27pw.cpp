@@ -1,38 +1,39 @@
 #include "Point.h"
+#include "Vector.h"
 #include <iostream>
 using namespace std;
 
 int main()
 {
-	Point p1(3, 4);
-	Point p2(5, 6);
-	Point p3;
-
+	Point p1(1, 1);
+	Point p2(15, 21);
 	p1.Print();
 	p2.Print();
 	++p1;
 	p1.Print();
-	--p1;
-	p1.Print();
-    if (p1 > p2)
-    {
-		cout << "Point 1 is further from (0,0) than point 2\n";
+	--p2;
+	p2.Print();
+	if (p1 > p2)
+	{
+		cout << "p1 is greater than p2" << endl;
 	}
 	else
 	{
-		cout << "Point 2 is further from (0,0) than point 1\n";
+		cout << "p1 is less than p2" << endl;
 	}
-	++p1;
-	++p1;
-	++p1;
+	if (p1 < p2)
+	{
+		cout << "p1 is less than p2" << endl;
+	}
+	else
+	{
+		cout << "p1 is greater than p2" << endl;
+	}
 	!p1;
 	p1.Print();
-	if (p1 > p2)
-    {
-		cout << "Point 1 is further from (0,0) than point 2\n";
-	}
-	else
-	{
-		cout << "Point 2 is further from (0,0) than point 1\n";
-	}
+	Vector v;
+	v.AddPoint(p1);
+	v.AddPoint(p2);
+	v.Print();
+	v.gotoxy();
 }

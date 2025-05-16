@@ -8,6 +8,8 @@ class Point
 public:
     Point();
     Point(int x, int y);
+    int getx();
+    int gety();
     void Print();
     void operator ++();
     void operator --();
