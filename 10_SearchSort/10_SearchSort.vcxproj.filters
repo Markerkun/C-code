@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="10_SearchSort.cpp">
+    <ClCompile Include="10hw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
