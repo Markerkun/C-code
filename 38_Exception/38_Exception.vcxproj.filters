@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="38_Exception.cpp">
+    <ClCompile Include="38_Stack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="38_Queue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
