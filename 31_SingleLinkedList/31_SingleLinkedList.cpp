@@ -111,25 +111,21 @@ public:
 	}
 };
 class Point {
-
 	int x, y;
 public:
+	Point() : x(0), y(0) {}
 
-	Point()
-	{
-		x = 0; y = 0;
-	}
+	Point(int x, int y) : x(x), y(y) {}
 
-	Point(int x, int y)
-	{
-		this->x = x; this->y = y;
-	}
-
-	void Print()
-	{
-		cout << "(" << x << "," << y << ")\n";
-	}
+	friend ostream& operator<<(ostream& os, const Point& p);
 };
+ostream& operator<<(ostream& os, const Point& p)
+{
+	os << "(" << p.x << ", " << p.y << ")";
+	return os;
+}
+
+
 class Vector
 {
 	int size;
