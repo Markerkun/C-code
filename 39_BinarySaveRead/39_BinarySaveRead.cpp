@@ -1,4 +1,6 @@
 #include <iostream>
+#include <fstream>
+#include <string>
 using namespace std;
 
 //struct Element
@@ -12,12 +14,13 @@ using namespace std;
 //	return out;
 //}
 
+template<typename T>
 class QueueWithPriority
 {
 private:
 	struct Element
 	{
-		string value;
+		T value;
 		int priority;
 		void Print()
 		{
@@ -33,7 +36,7 @@ public:
 	{
 		if (arr != nullptr)delete[]arr;
 	}
-	void Enqueue(string value, int priority)
+	void Enqueue(T value, int priority)
 	{
 		int index = 0;
 		while (index < size && arr[index].priority > priority) { index++; }
@@ -82,20 +85,44 @@ public:
 	{
 		cout << "-------- The first in queue --------" << endl;
 		if (!IsEmpty()) arr[0].Print();
-		
+
 		cout << "_____________________________________" << endl;
 	}
-
-	~QueueWithPriority() {
-		if (arr != nullptr) delete[] arr;
-		arr = nullptr;
-		size = 0;
+	void BinarySave()
+	{
+		ofstream out("BinaryQueue.bin", ios_base::out | ios_base::binary);
+		out.write((char*) & size, sizeof(size));
+		for (int i = 0; i < size; i++)
+		{
+			out.write((char*)&arr[i], sizeof(arr[i]));
+			//.write((char*)&arr[i].priority, sizeof(arr[i].priority));
+		}
+		out.close();
+		cout << "File saved" << endl;
+	}
+	void BinaryRead()
+	{
+		ifstream in("BinaryQueue.bin", ios_base::binary);
+		if (!in.is_open())
+		{
+			cout << "File not found" << endl;
+			return;
+		}
+		in.read((char*)&size, sizeof(size));
+		arr = new Element[size];
+		for (int i = 0; i < size; i++)
+		{
+			in.read((char*)&arr[i], sizeof(arr[i]));
+			//in.read((char*)&array[i].priority, sizeof(arr[i].priority));
+		}
+		in.close();
+		
 	}
 };
 
 int main()
 {
-	QueueWithPriority q;
+	QueueWithPriority<string> q;
 
 	string value;
 	int priority;
@@ -106,9 +133,11 @@ int main()
 		cout << "2. Show all documents" << endl;
 		cout << "3. Add document" << endl;
 		cout << "4. Print documents" << endl;
-		cout << "5. Exit" << endl;
+		cout << "5. Save documents" << endl;
+		cout << "6. Read documents" << endl;
+		cout << "7. Exit" << endl;
 		cin >> choice;
-		switch(choice)
+		switch (choice)
 		{
 		case 1:
 			q.PrintFirst();
@@ -127,17 +156,23 @@ int main()
 			{
 				cout << "Document: " << q.Dequeue().value << endl;
 			}
-		
+
 			break;
 		case 5:
+			q.BinarySave();
+			break;
+		case 6:
+			q.BinaryRead();
+			break;
+		case 7:
 			cout << "Exit" << endl;
 			return 0;
 		default:
 			cout << "Invalid choice" << endl;
 			break;
-				
-			}
-	} while (choice != 5);
+
+		}
+	} while (choice != 7);
 
 
 
