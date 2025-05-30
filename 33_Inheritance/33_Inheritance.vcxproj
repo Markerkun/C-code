@@ -20,8 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\33_TreeList\33hw.cpp" />
-    <ClCompile Include="..\33_TreeList\33pw1.cpp" />
-    <ClCompile Include="..\33_TreeList\33pw2.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
