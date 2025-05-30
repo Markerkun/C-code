@@ -128,6 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="33hw.cpp" />
     <ClCompile Include="33pw2.cpp" />
     <ClCompile Include="33pw1.cpp" />
   </ItemGroup>
