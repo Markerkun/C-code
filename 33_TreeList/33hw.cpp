@@ -135,10 +135,12 @@ void main()
 	sparrow.Fly();
 	sparrow.Show();
 	sparrow.Say();
+	cout << endl;
 	crocodile croc("Croc", 10, "Reptile", 5, 200.0f, "River", "Scaly", "Swamp");
 	croc.Move();
 	croc.Show();
 	croc.Say();
+	cout << endl;
 	Fugo fugo("Fugo", 5, "Fish", 2, 1.5f, "Ocean", "Smooth", "Saltwater", "Tetrodotoxin");
 	fugo.Move();
 	fugo.Show();

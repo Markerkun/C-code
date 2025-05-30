@@ -18,13 +18,17 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\33_TreeList\33hw.cpp" />
+    <ClCompile Include="..\33_TreeList\33pw1.cpp" />
+    <ClCompile Include="..\33_TreeList\33pw2.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{686fc9ff-88ff-48d2-9f59-5e5a8fc8e1b5}</ProjectGuid>
-    <RootNamespace>My33TreeList</RootNamespace>
+    <ProjectGuid>{a5e71f3d-cba2-4a95-b62b-bcda695e1576}</ProjectGuid>
+    <RootNamespace>My33Inheritance</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>33_Inheritanc</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,11 +131,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="33hw.cpp" />
-    <ClCompile Include="33pw2.cpp" />
-    <ClCompile Include="33pw1.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
